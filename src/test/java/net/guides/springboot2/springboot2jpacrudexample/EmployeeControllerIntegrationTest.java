@@ -74,13 +74,13 @@ public class EmployeeControllerIntegrationTest {
 	@Test
 	public void testUpdateEmployee() {
 		int id = 1;
-		Employee employee = restTemplate.getForObject(getRootUrl() + "/employees/" + id, Employee.class);
+		Employee employee = restTemplate.getForObject(getRootUrl() + "/birthDay/" + id, Employee.class);
 		employee.setFirstName("admin1");
 		employee.setLastName("admin2");
 
 		restTemplate.put(getRootUrl() + "/employees/" + id, employee);
 
-		Employee updatedEmployee = restTemplate.getForObject(getRootUrl() + "/employees/" + id, Employee.class);
+		Employee updatedEmployee = restTemplate.getForObject(getRootUrl() + "/birthDay/" + id, Employee.class);
 		assertNotNull(updatedEmployee);
 	}
 
