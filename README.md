@@ -45,7 +45,24 @@ Para realizar el despliege del frontend unicamente se tiene que ejecutar el serv
 <img src="https://github.com/imundo/LATAN_test/blob/master/img/img2.PNG">
 
 
+# PostMan 
 
+Lista de Apis: 
+
+AGREGAR EMPLEADO Cumpleaños POST: 
+
+http://localhost:8080/api/v1/birthDay
+
+<img src="https://github.com/imundo/LATAN_test/blob/master/img/img6.PNG">
+Listar Empleados cumpleaños GET: 
+
+http://localhost:8080/api/v1/birthDay
+
+<img src="https://github.com/imundo/LATAN_test/blob/master/img/img7.PNG">
+
+Buscar por ID GET:
+
+http://localhost:8080/api/v1/birthDay/birthDay/{id}
 
 
 
