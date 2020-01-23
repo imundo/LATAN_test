@@ -1,0 +1,22 @@
+<div class="container">
+	<div class="row">	
+  <span style="color:#126BC3; font-size:8px" id ="fecha">fecha actual:{{CurrentDate | date:'dd-MM-yyyy'}}</span>
+		<div class="list-users" ng-repeat="user in home.users">
+			<h2>Nombre y Apellido: {{ user.firstName }} {{ user.lastName }}</h2>
+			<h2  style="color:#E60026; font-size:12px" ng-show="user.birthDay"> FELIZ CUMPLEAÑOS!!! {{ user.firstName }} {{ user.lastName }}!!!!! </h2>
+			<p>Edad:{{ user.age }}</p>
+			<p>Fecha de Nacimiento:{{ user.date  | date:'dd-MM-yyyy'}}</p>
+			<p>Correo: {{ user.emailId }}</p>
+			<div class="list-users" ng-repeat="poem in home.poems | limitTo:1:0">
+			<div ng-show="user.birthDay">
+			<p style="color:#126BC3; font-size:12px"   >POEMA A DEDICADO AL CUMPLEAÑERO:</p>
+			<p style="color:#126BC3; font-size:12px"   >TITULO: {{poem.title}}</p>
+			<p style="color:#126BC3; font-size:12px"   >POEMA: {{poem.content}}</p>
+			<p style="color:#126BC3; font-size:12px"   >POETA: {{poem.poet.name}}</p>
+			<p style="color:#126BC3; font-size:12px"   >URL: {{poem.url}}</p>
+            </div>
+			</div>
+		</div>
+
+	</div>
+</div>

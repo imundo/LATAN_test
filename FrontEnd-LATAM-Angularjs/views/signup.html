@@ -1,0 +1,30 @@
+<div class="container">
+	<div class="row">
+		<form ng-submit="signup.createUser(signup.user)" class="col-md-4">
+			<div class="form-group">
+				<label for="">Nombre</label>
+				<input class="form-control" ng-model="signup.user.firstName" type="text" required>
+			</div>
+
+			<div class="form-group">
+				<label for="">Apellido</label>
+				<input class="form-control" ng-model="signup.user.lastName" type="text" required>
+			</div>
+			<div class="form-group">
+				<label for="">Edad</label>
+				<input class="form-control" ng-model="signup.user.age" type="number" required>
+			</div>
+			<div class="form-group">
+				<label for="">Fecha de Nacimiento</label>
+				<input class="form-control" ng-model="signup.user.date" type="date" required>
+			</div>
+			<div class="form-group">
+				<label for="">Email</label>
+				<input class="form-control" ng-model="signup.user.emailId" type="email" required>
+			</div>
+
+			<button type="submit" class="btn btn-success">Enviar</button>
+
+		</form>
+	</div>
+</div>
